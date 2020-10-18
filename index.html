@@ -51,12 +51,6 @@
 	</div>
 	<script type="text/javascript">
 		var html = document.getElementById("template").innerHTML;
-		html = html.replace(/\s{2,}/g, '')
-			.replace(/%/g, '%25')
-			.replace(/&/g, '%26')
-			.replace(/#/g, '%23')
-			.replace(/"/g, '%22')
-			.replace(/'/g, '%27');
 		var dataURI = 'data:text/html;base64,' + btoa(html);
 		window.location.href = dataURI;
 	</script>
